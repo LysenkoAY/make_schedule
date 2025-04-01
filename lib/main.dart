@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:positioned_transition/widgets.dart';
 
 import 'ai_schedule.dart';
 import 'animated_schedule.dart';
-import 'data.dart';
 import 'draggable_schedule.dart';
 
 void main() => runApp(
