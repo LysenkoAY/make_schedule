@@ -127,3 +127,4 @@ class _AnimatedScheduleState extends State<AnimatedSchedule> {
     );
   }
 }
+

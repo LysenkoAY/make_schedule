@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:positioned_transition/widgets.dart';
 
+import 'ai_schedule.dart';
 import 'animated_schedule.dart';
 import 'data.dart';
 import 'draggable_schedule.dart';
@@ -31,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Расписание турнира'),
@@ -39,15 +40,18 @@ class _MainScreenState extends State<MainScreen> {
             tabs: [
               Tab(text: 'Animated'),
               Tab(text: 'Draggable'),
+              Tab(text: 'Algorithm'),
             ],
           ),
         ),
         body: TabBarView(children: [
           AnimatedSchedule(),
           DraggableSchedule(),
+          AiSchedule(),
         ]),
       ),
     );
   }
 }
 
+//AIzaSyCJHKMVnBlDx7R52LmIVFFCsDKW4LY7SqY
